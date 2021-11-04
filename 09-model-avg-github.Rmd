@@ -145,11 +145,12 @@ summary(m_avg2)
 mean(
   (predict(m_avg2, newdata = hsbtest, re.form = NA) - hsbtest$mAch)^2
 )
+
 ```
 
 Note the above performs better than previous models.
 
-The following shows the variance importance of the predictors. It adds up the weights of the models that contain a given predictor, for each predictor. 
+The following shows the varianc e importance of the predictors. It adds up the weights of the models that contain a given predictor, for each predictor. 
 
 ```{r imp-avg2}
 importance(m_avg2)
